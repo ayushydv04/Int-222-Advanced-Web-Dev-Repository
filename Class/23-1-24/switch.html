@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript if</h2>
+    <p>Display "Good Day!" if the hour is less than 18:00</p>
+    <p id="demo">Good Evening!</p>
+    <script>
+        let day;
+        switch (new Date().getDay) {
+            case 1:
+                day = "Monday"
+                break;
+        
+            case 2:
+                day = "Tuesday"
+                break;
+        
+            case 3:
+                day = "Wednesday"
+                break;
+        
+            case 4:
+                day = "Thursday"
+                break;
+        
+            case 5:
+                day = "Friday"
+                break;
+        
+            case 6:
+                day = "Saturday"
+                break;
+
+            case 7:
+                day = "Sunday"
+                break;
+        
+            default:
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+</body>
+</html>
